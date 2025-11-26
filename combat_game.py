@@ -18,7 +18,7 @@ class Player:
 
 
 class Enemy:
-    """ts a class for creating instances of an enemy character for combat encounters"""
+    """A class for creating instances of an enemy character for combat encounters"""
     entityType = "Unassigned"
     currentHealth = 100
     maxHealth = 100
@@ -54,6 +54,8 @@ p = Player()
 enemies = []
 enemies.append(Enemy())
 enemies.append(Enemy())
+p.Attack(enemies[0])
+
 
 for x in ememies:
     x.DecideAction(p)
