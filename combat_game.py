@@ -1,5 +1,8 @@
 from random import Random
 
+class Entity:
+    maxHealth = 200
+    
 class Player:
     """ts a class for creating instances of a player character for combat encounters"""
     entityType = "Unassigned"
@@ -15,7 +18,6 @@ class Player:
     def StillAlive(self):
         if self.currentHealth <= 0:
             self.alive = False
-
 
 class Enemy:
     """A class for creating instances of an enemy character for combat encounters"""
@@ -48,6 +50,8 @@ class Enemy:
             case 3:
                 pass
                 # self.Parry(3)
+
+
 
 
 p = Player()
